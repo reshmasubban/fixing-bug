@@ -14,11 +14,7 @@ def botter_betty():
 
 def main(argv):
 	botter_betty()
-	try:
-		assert betty_botter == expected_output
-		print("Success")
-	except AssertionError:
-		print("Failed")
-		exit(1)
+	assert betty_botter == expected_output,"Failed"
+	print("Success")
 if __name__ == '__main__':
     main(sys.argv)
